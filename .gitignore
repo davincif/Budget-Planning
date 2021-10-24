@@ -1,0 +1,10 @@
+# environment
+.virenv/
+
+# python
+*.pyc
+__pycache__/
+
+
+# others
+trash/
