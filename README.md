@@ -32,7 +32,7 @@ python manage.py runserver
 3. Manage **Bill**
    1. Date of the Income
    2. Recurrency of the Income
-   3. The user can classify each bill, as a tag.
+   3. The user can classify each bill, as a **Tag**.
    4. A bill is always associated with a *Transference* in an Account or with a *Cred Card*
 4. The user must be capable if **deviding a bill** between this user and other people that he will indicate.
 5. Manage **Borrowing**
@@ -40,6 +40,7 @@ python manage.py runserver
    2. When is it going to be paind?
    3. How much is it going to be payed per time (per mounth, week, etc...)
 6. Manage **Savings**
+   1. Savings also have **Tags**
 7. **BI**, that is, the system must be capable of showing some basic statistic charts for the user
 8. Manager **Account**:
    1. Managing **Transferences** in an account. They can be made:
@@ -48,7 +49,9 @@ python manage.py runserver
       3. From an Income
       4. From a *Borrowing* payment
       5. The money the user has in his pocket is considered to be a type of account.
-9. Manage **Cred Cards**
-   1.  Cards has **model of use**:
+9.  Manage **Cred Cards**
+   2.  Cards has **mode of use**:
        1.  Credit
        2.  Debit
+
+[docs](docs/CLASS_DIAGRAM.md)

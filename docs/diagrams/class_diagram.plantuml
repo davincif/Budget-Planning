@@ -1,0 +1,50 @@
+@startuml Budget Planning - API
+
+class Users {
+  username
+  frist_name
+  last_name
+  description
+  password
+  access_level
+  is_active
+}
+
+class Cred_Cards {
+  available_modes
+  flag
+  description
+}
+
+class Accounts {
+  bank
+  name
+  description
+}
+
+class Bills {
+  value
+  description
+  date
+  recurrency
+  tags
+}
+
+class Tags {
+  name
+}
+
+class Savings {
+  tags
+  name
+  description
+  value
+  recurrency
+}
+
+Cred_Cards "1" *--> "n" Bills : has
+Bills "n" o--> "1" Accounts : payed by
+Tags "n" o--> "n" Bills : is in
+Tags "n" o--> "n" Savings : is in
+
+@enduml
